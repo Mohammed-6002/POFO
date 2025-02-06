@@ -12,6 +12,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: white;
+    
 }
 
 .nav-links a {
@@ -42,14 +43,8 @@ nav {
 .social-icons img {
     width: 70%;
     height: 70%;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease-in-out;
 }
 
-.social-icons a:hover img {
-    filter: grayscale(0%);
-}
 
 .main-content {
     background-color: #222;
@@ -81,16 +76,15 @@ nav {
     max-width: 600px;
 }
 
-.text-container h1 {
+h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    margin-right: 70px ;
+    margin-bottom: 400px;
+    margin-left: 200px;
 }
 
 .text-container p {
     font-size: 18px;
     line-height: 1.6;
-    margin-right: 70px;
 }
 
 
