@@ -11,15 +11,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 5px;
-    font-size: 18px;
-    font-size: 24px;
+    margin: 0 15px;
+    font-size: 20px;
 }
 
 .social-icons {
@@ -30,7 +30,6 @@ nav {
 .social-icons a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -51,6 +50,51 @@ nav {
 .social-icons a:hover img {
     filter: grayscale(0%);
 }
+
+.main-content {
+    background-color: #222;
+    padding: 50px 20px;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 2;
+    max-width: 600px;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-right: 70px ;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-right: 70px;
+}
+
+
+
 
 
 
