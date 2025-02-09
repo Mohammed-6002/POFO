@@ -13,7 +13,7 @@ body {
         "header"
         "main"
         "footer";
-    min-height: 100vh;
+    height: 100vh;
 }
 
 header {
@@ -55,60 +55,3 @@ nav {
     width: 70%;
     height: 70%;
 }
-
-main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-    width: 250px; 
-    height: auto;
-    border-radius: 8px;
-}
-
-.text-container {
-    max-width: 600px;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px; 
-    margin-left: 100px;
-}
-
-.text-container p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-left: 100px;
-}
-
-footer {
-    grid-area: footer;
-    background: #333;
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-
-
