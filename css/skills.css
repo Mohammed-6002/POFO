@@ -95,16 +95,6 @@ main {
     gap: 10px;
     width: 100%;
 }
-.skill-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    padding: 5px 15px;
-    background: limegreen;
-    border-radius: 5px;
-    width: 70px;
-    text-align: center;
-}
 
 .progress-bar {
     width: 95%;
@@ -130,17 +120,17 @@ main {
 }
 
 .html {
-    width: 80%;
+    width: 80%;  /* HTML voortgangbalk */
     background: limegreen;
 }
 
 .css {
-    width: 67%;
+    width: 67%;  /* CSS voortgangbalk */
     background: limegreen;
 }
 
 .js {
-    width: 55%;
+    width: 55%;  /* JS voortgangbalk */
     background: limegreen;
 }
 
@@ -178,7 +168,6 @@ footer {
     padding: 0%;
 }
 
-
 .HTML {
     margin-right: 75%;
 }
@@ -190,3 +179,4 @@ footer {
 .JS {
     margin-right: 75%;
 }
+
