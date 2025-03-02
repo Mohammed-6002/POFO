@@ -25,7 +25,7 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .nav-links {
@@ -68,17 +68,23 @@ nav {
 main {
     grid-area: main;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 40px;
+}
+
+/* H1 bovenaan gecentreerd */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
 
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    height: 70%;
-    gap: 200px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -92,7 +98,6 @@ main {
 .skill {
     display: flex;
     align-items: center;
-    gap: 10px;
     width: 100%;
 }
 
@@ -119,31 +124,13 @@ main {
     width: 100%;
 }
 
-.html {
-    width: 80%;  
-    background: limegreen;
-}
-
-.css {
-    width: 67%;  
-    background: limegreen;
-}
-
-.js {
-    width: 55%;  
-    background: limegreen;
-}
+.html { width: 80%; background: limegreen; }
+.css { width: 67%; background: limegreen; }
+.js { width: 55%; background: limegreen; }
 
 .skills-right {
     text-align: left;
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.skills-right h1 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .skills-right p {
@@ -160,26 +147,25 @@ footer {
     font-size: 16px;
 }
 
-.progress span {
-    position: relative;
-    z-index: 2;
-    color: black;
-    font-size: 14px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 0%;
+/* ✅ Media Query: Skills-left boven, Skills-right onder op mobiel */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-left, 
+    .skills-right {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.HTML {
-    margin-right: 75%;
-}
-
-.CSS {
-    margin-right: 75%;
-}
-
-.JS {
-    margin-right: 75%;
-}
 
