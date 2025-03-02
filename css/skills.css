@@ -147,8 +147,7 @@ footer {
     font-size: 16px;
 }
 
-/* ✅ Media Query: Skills-left boven, Skills-right onder op mobiel */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .skills-container {
         display: flex;
         flex-direction: column;
