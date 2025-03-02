@@ -67,7 +67,7 @@ nav {
     justify-content: center;
     gap: 10px;
     width: 100%;
-    margin-top: 10px; /* Zorgt voor wat ruimte tussen nav-links en social-icons */
+    margin-top: 10px; 
 }
 
 .social-icons a {
