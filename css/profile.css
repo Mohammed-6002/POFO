@@ -116,7 +116,6 @@ h1 {
     margin-left: 100px;
 }
 
-/* Media query for small screens */
 @media screen and (max-width: 750px) {
     main {
         display: flex;

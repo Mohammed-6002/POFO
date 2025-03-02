@@ -7,47 +7,68 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
 header {
-    grid-area: header;
     background: #333;
     padding: 10px;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    text-align: center;
+    height: 70px;
 }
 
 .nav-links {
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: 100%;
+    margin-top: 20px;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.profile-photo img {
+    width: 250px; 
+    height: 250px; 
+    margin-bottom: 15px;
+}
+
+.profile-photo p {
+    text-align: center;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
     gap: 10px;
-    width: 100%;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .social-icons a {
@@ -64,3 +85,102 @@ nav {
     width: 70%;
     height: 70%;
 }
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #39f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-info {
+        order: -1; 
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .profile-photo {
+        margin-bottom: 20px;
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-info h1 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+
+
+
