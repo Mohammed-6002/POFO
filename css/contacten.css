@@ -1,9 +1,25 @@
+:root {
+    --primary-bg: #222;
+    --secondary-bg: #333;
+    --text-color: white;
+    --highlight-color: #39f;
+    --font-family: Arial, sans-serif;
+    --header-height: 70px;
+    --font-size-header: 28px;
+    --font-size-subheader: 18px;
+    --font-size-body: 16px;
+    --social-icon-size: 40px;
+    --social-icon-img-size: 70%;
+    --profile-photo-size: 250px;
+    --profile-photo-img-size: 200px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #222;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    color: var(--text-color);
 }
 
 .container {
@@ -13,10 +29,10 @@ body {
 }
 
 header {
-    background: #333;
+    background: var(--secondary-bg);
     padding: 10px;
     text-align: center;
-    height: 70px;
+    height: var(--header-height);
 }
 
 .nav-links {
@@ -27,10 +43,10 @@ header {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--font-size-subheader);
 }
 
 main {
@@ -56,8 +72,8 @@ main {
 }
 
 .profile-photo img {
-    width: 250px; 
-    height: 250px; 
+    width: var(--profile-photo-size);
+    height: var(--profile-photo-size);
     margin-bottom: 15px;
 }
 
@@ -67,23 +83,25 @@ main {
 
 .social-icons {
     display: flex;
+    justify-content: center;
+    align-content: center;
     gap: 10px;
     margin-top: 10px;
 }
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: var(--social-icon-size);
+    height: var(--social-icon-size);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
 }
 
 .social-icons img {
-    width: 70%;
-    height: 70%;
+    width: var(--social-icon-img-size);
+    height: var(--social-icon-img-size);
 }
 
 .contact-info {
@@ -93,27 +111,27 @@ main {
 }
 
 .contact-info h1 {
-    font-size: 28px;
+    font-size: var(--font-size-header);
     margin-bottom: 15px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .contact-info p {
-    font-size: 18px;
+    font-size: var(--font-size-subheader);
     margin: 10px 0;
 }
 
 .contact-info a {
-    color: #39f;
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 footer {
-    background: #333;
+    background: var(--secondary-bg);
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-body);
 }
 
 @media (max-width: 768px) {
@@ -153,8 +171,8 @@ footer {
     }
 
     .profile-photo img {
-        width: 200px;
-        height: 200px;
+        width: var(--profile-photo-img-size);
+        height: var(--profile-photo-img-size);
     }
 
     .contact-info h1 {

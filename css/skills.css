@@ -1,9 +1,22 @@
+:root {
+    --primary-bg: #222;
+    --secondary-bg: #333;
+    --text-color: white;
+    --font-family: Arial, sans-serif;
+    --header-font-size: 32px;
+    --footer-font-size: 16px;
+    --progress-bar-bg: #444;
+    --progress-success: limegreen;
+    --progress-height: 80px;
+    --skill-description-font-size: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #222;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    color: var(--text-color);
 }
 
 .container {
@@ -18,7 +31,7 @@ body {
 
 header {
     grid-area: header;
-    background: #333;
+    background: var(--secondary-bg);
     padding: 10px;
 }
 
@@ -36,7 +49,7 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -56,7 +69,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
 }
 
@@ -74,11 +87,10 @@ main {
     margin-top: 100px;
 }
 
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: var(--header-font-size);
 }
 
 .skills-container {
@@ -104,10 +116,10 @@ h1 {
 
 .progress-bar {
     width: 95%;
-    background: #444;
+    background: var(--progress-bar-bg);
     border-radius: 5px;
     overflow: hidden;
-    height: 80px;
+    height: var(--progress-height);
     display: flex;
     position: relative;
 }
@@ -127,17 +139,17 @@ h1 {
 
 .html { 
     width: 80%; 
-    background: limegreen; 
+    background: var(--progress-success); 
 }
 
 .css { 
     width: 67%; 
-    background: limegreen; 
+    background: var(--progress-success); 
 }
 
 .js { 
     width: 55%;
-     background: limegreen; 
+    background: var(--progress-success); 
 }
 
 .skills-right {
@@ -146,17 +158,17 @@ h1 {
 }
 
 .skills-right p {
-    font-size: 20px;
+    font-size: var(--skill-description-font-size);
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
 footer {
     grid-area: footer;
-    background: #333;
+    background: var(--secondary-bg);
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--footer-font-size);
 }
 
 @media screen and (max-width: 750px) {
