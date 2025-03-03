@@ -124,9 +124,20 @@ h1 {
     width: 100%;
 }
 
-.html { width: 80%; background: limegreen; }
-.css { width: 67%; background: limegreen; }
-.js { width: 55%; background: limegreen; }
+.html { 
+    width: 80%; 
+    background: limegreen; 
+}
+
+.css { 
+    width: 67%; 
+    background: limegreen; 
+}
+
+.js { 
+    width: 55%;
+     background: limegreen; 
+}
 
 .skills-right {
     text-align: left;
