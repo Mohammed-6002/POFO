@@ -29,7 +29,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 50px;
+    padding: 10px;
     max-width: 1200px;
     margin: auto;
 }
