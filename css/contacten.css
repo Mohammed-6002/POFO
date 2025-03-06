@@ -23,8 +23,13 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--header-height) 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     height: 100vh;
 }
 
@@ -33,6 +38,7 @@ header {
     padding: 10px;
     text-align: center;
     height: var(--header-height);
+    grid-area: header;
 }
 
 .nav-links {
@@ -50,16 +56,17 @@ header {
 }
 
 main {
-    flex: 1;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-area: main;
 }
 
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "profile-info contact-info";
     width: 80%;
     max-width: 1200px;
 }
@@ -68,7 +75,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    grid-area: profile-info;
 }
 
 .profile-photo img {
@@ -105,9 +112,9 @@ main {
 }
 
 .contact-info {
-    flex: 1;
     text-align: left;
     padding-left: 30px;
+    grid-area: contact-info;
 }
 
 .contact-info h1 {
@@ -132,42 +139,30 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: var(--font-size-body);
+    grid-area: footer;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 0;
-    }
-
-    header {
-        height: auto;
-        padding: 15px;
-    }
-
-    .nav-links {
-        flex-direction: row;
-        gap: 10px;
-        margin-top: 0;
-    }
-
-    .nav-links a {
-        font-size: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
     }
 
     .contact-section {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contact-info"
+            "profile-info";
     }
 
     .contact-info {
-        order: -1; 
         text-align: center;
-        padding-left: 0;
+        margin-left: 70px;
     }
 
     .profile-photo {
         margin-bottom: 20px;
+        margin-left: 100px;
     }
 
     .profile-photo img {
@@ -197,6 +192,7 @@ footer {
         height: 50%;
     }
 }
+
 
 
 
