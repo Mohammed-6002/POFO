@@ -90,25 +90,27 @@ main {
 
 .social-icons {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: center; /* Zorgt ervoor dat de iconen horizontaal gecentreerd zijn */
+    align-items: center; /* Zorgt ervoor dat de iconen verticaal gecentreerd zijn */
+    gap: 10px; /* Ruimte tussen de iconen */
+    margin-top: 10px; /* Zorgt voor wat ruimte boven de iconen */
 }
 
 .social-icons a {
-    width: var(--social-icon-size);
-    height: var(--social-icon-size);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
+    width: 50px; /* Cirkelgrootte */
+    height: 50px; /* Cirkelgrootte */
+    border: 2px solid white; /* De rand van de cirkel */
+    border-radius: 50%; /* Maakt de cirkel */
+    overflow: hidden; /* Zorgt ervoor dat de afbeeldingen binnen de cirkel blijven */
 }
 
 .social-icons img {
-    width: var(--social-icon-img-size);
-    height: var(--social-icon-img-size);
+    width: 70%; /* Zorgt ervoor dat de afbeelding binnen de cirkel blijft */
+    height: 70%; /* Zorgt ervoor dat de afbeelding binnen de cirkel blijft */
+    object-fit: contain; /* Zorgt ervoor dat de afbeelding proportioneel wordt geschaald binnen de cirkel */
 }
 
 .contact-info {
