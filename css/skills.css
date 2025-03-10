@@ -89,8 +89,7 @@ main {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
-    font-size: var(--header-font-size);
+    margin-bottom: 80px;
 }
 
 .skills-container {

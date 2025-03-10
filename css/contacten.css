@@ -68,7 +68,7 @@ main {
     grid-template-areas: 
         "profile-info contact-info";
     width: 80%;
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 .profile-photo {
@@ -90,40 +90,42 @@ main {
 
 .social-icons {
     display: flex;
-    justify-content: center; /* Zorgt ervoor dat de iconen horizontaal gecentreerd zijn */
-    align-items: center; /* Zorgt ervoor dat de iconen verticaal gecentreerd zijn */
-    gap: 10px; /* Ruimte tussen de iconen */
-    margin-top: 10px; /* Zorgt voor wat ruimte boven de iconen */
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px;
 }
 
 .social-icons a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px; /* Cirkelgrootte */
-    height: 50px; /* Cirkelgrootte */
-    border: 2px solid white; /* De rand van de cirkel */
-    border-radius: 50%; /* Maakt de cirkel */
-    overflow: hidden; /* Zorgt ervoor dat de afbeeldingen binnen de cirkel blijven */
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid white; 
+    border-radius: 50%; 
+    overflow: hidden;
 }
 
 .social-icons img {
-    width: 70%; /* Zorgt ervoor dat de afbeelding binnen de cirkel blijft */
-    height: 70%; /* Zorgt ervoor dat de afbeelding binnen de cirkel blijft */
-    object-fit: contain; /* Zorgt ervoor dat de afbeelding proportioneel wordt geschaald binnen de cirkel */
+    width: 70%; 
+    height: 70%; 
+    object-fit: contain;
 }
 
 .contact-info {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 50px;
     grid-area: contact-info;
+    margin-bottom: 70px;
 }
 
-.contact-info h1 {
-    font-size: var(--font-size-header);
-    margin-bottom: 15px;
-    color: var(--text-color);
+
+h1 {
+    text-align: center;
 }
+    
+
 
 .contact-info p {
     font-size: var(--font-size-subheader);
