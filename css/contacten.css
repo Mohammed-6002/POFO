@@ -67,8 +67,9 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "profile-info contact-info";
-    width: 80%;
+    width: 90%;
     max-width: 1500px;
+    margin-bottom: 70px;
 }
 
 .profile-photo {
