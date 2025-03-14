@@ -82,7 +82,7 @@ main {
 .profile-photo img {
     width: var(--profile-photo-size);
     height: var(--profile-photo-size);
-    margin-bottom: 15px;
+    margin-bottom: 3px;
 }
 
 .profile-photo p {
@@ -94,7 +94,6 @@ main {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    margin-top: 10px;
 }
 
 .social-icons a {
@@ -105,19 +104,16 @@ main {
     height: 50px; 
     border: 2px solid white; 
     border-radius: 50%; 
-    overflow: hidden;
 }
 
 .social-icons img {
     width: 70%; 
     height: 70%; 
-    object-fit: contain;
 }
 
 .contact-info {
     text-align: left;
     padding-left: 50px;
-    grid-area: contact-info;
     margin-bottom: 70px;
 }
 
