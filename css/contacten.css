@@ -1,22 +1,44 @@
+:root {
+    --primary-bg: #222;
+    --secondary-bg: #333;
+    --text-color: white;
+    --highlight-color: #39f;
+    --font-family: Arial, sans-serif;
+    --header-height: 70px;
+    --font-size-header: 28px;
+    --font-size-subheader: 18px;
+    --font-size-body: 16px;
+    --social-icon-size: 40px;
+    --social-icon-img-size: 70%;
+    --profile-photo-size: 250px;
+    --profile-photo-img-size: 200px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #222;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    color: var(--text-color);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: var(--header-height) 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     height: 100vh;
 }
 
 header {
-    background: #333;
+    background: var(--secondary-bg);
     padding: 10px;
     text-align: center;
-    height: 70px;
+    height: var(--header-height);
+    grid-area: header;
 }
 
 .nav-links {
@@ -27,38 +49,40 @@ header {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--font-size-subheader);
 }
 
 main {
-    flex: 1;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-area: main;
 }
 
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "profile-info contact-info";
+    width: 90%;
+    max-width: 1500px;
+    margin-bottom: 70px;
 }
 
 .profile-photo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    grid-area: profile-info;
 }
 
 .profile-photo img {
-    width: 250px; 
-    height: 250px; 
-    margin-bottom: 15px;
+    width: var(--profile-photo-size);
+    height: var(--profile-photo-size);
+    margin-bottom: 3px;
 }
 
 .profile-photo p {
@@ -67,94 +91,84 @@ main {
 
 .social-icons {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
 }
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    border: 2px solid white; 
+    border-radius: 50%; 
 }
 
 .social-icons img {
-    width: 70%;
-    height: 70%;
+    width: 70%; 
+    height: 70%; 
 }
 
 .contact-info {
-    flex: 1;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 50px;
+    margin-bottom: 70px;
 }
 
-.contact-info h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #fff;
+
+h1 {
+    text-align: center;
 }
+    
+
 
 .contact-info p {
-    font-size: 18px;
+    font-size: var(--font-size-subheader);
     margin: 10px 0;
 }
 
 .contact-info a {
-    color: #39f;
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 footer {
-    background: #333;
+    background: var(--secondary-bg);
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-body);
+    grid-area: footer;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 0;
-    }
-
-    header {
-        height: auto;
-        padding: 15px;
-    }
-
-    .nav-links {
-        flex-direction: row;
-        gap: 10px;
-        margin-top: 0;
-    }
-
-    .nav-links a {
-        font-size: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
     }
 
     .contact-section {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "contact-info"
+            "profile-info";
     }
 
     .contact-info {
-        order: -1; 
         text-align: center;
-        padding-left: 0;
+        margin-left: 10px;
     }
 
     .profile-photo {
         margin-bottom: 20px;
+        margin-left: 50px;
     }
 
     .profile-photo img {
-        width: 200px;
-        height: 200px;
+        width: var(--profile-photo-img-size);
+        height: var(--profile-photo-img-size);
     }
 
     .contact-info h1 {
@@ -179,6 +193,7 @@ footer {
         height: 50%;
     }
 }
+
 
 
 

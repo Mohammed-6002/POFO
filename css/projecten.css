@@ -1,13 +1,25 @@
+:root {
+    --primary-bg: #222;
+    --secondary-bg: #333;
+    --text-color: white;
+    --font-family: Arial, sans-serif;
+    --footer-font-size: 16px;
+    --heading-font-size: 24px;
+    --project-title-font-size: 24px;
+    --project-text-color: #ccc;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #222;
-    font-family: Arial, sans-serif;
-    color: white;
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    color: var(--text-color);
 }
 
 h1 {
     text-align: center;
+    margin-top: 50px;
 }
 
 .container {
@@ -22,7 +34,7 @@ h1 {
 
 header {
     grid-area: header;
-    background: #333;
+    background: var(--secondary-bg);
     padding: 10px;
 }
 
@@ -32,10 +44,10 @@ main {
 
 footer {
     grid-area: footer;
-    background: #333;
+    background: var(--secondary-bg);
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--footer-font-size);
 }
 
 nav {
@@ -52,7 +64,7 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -72,7 +84,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
 }
 
@@ -91,7 +103,7 @@ nav {
 }
 
 .project {
-    background: #222;
+    background: var(--primary-bg);
     padding: 5px;
     border-radius: 8px;
     text-align: center;
@@ -100,9 +112,9 @@ nav {
 }
 
 .project h2 {
-    font-size: 24px;
+    font-size: var(--project-title-font-size);
     margin-bottom: 15px;
-    color: white;
+    color: var(--text-color);
 }
 
 .project img {
@@ -115,7 +127,7 @@ nav {
 
 .project p {
     font-size: 16px;
-    color: #ccc;
+    color: var(--project-text-color);
     margin-top: 10px;
 }
 
