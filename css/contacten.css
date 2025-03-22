@@ -66,10 +66,10 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        "profile-info contact-info";
+    "profile-info contact-info";
     width: 90%;
     max-width: 1500px;
-    margin-bottom: 70px;
+    margin-top: 100px;
 }
 
 .profile-photo {
@@ -114,15 +114,15 @@ main {
 .contact-info {
     text-align: left;
     padding-left: 50px;
-    margin-bottom: 70px;
+    margin-top: 40px;
 }
 
 
 h1 {
     text-align: center;
+    margin-top: 50px;
 }
     
-
 
 .contact-info p {
     font-size: var(--font-size-subheader);
@@ -139,6 +139,7 @@ footer {
     background: var(--secondary-bg);
     text-align: center;
     padding: 10px;
+    margin-top: 50px;
     font-size: var(--font-size-body);
     grid-area: footer;
 }
