@@ -1,54 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/profile.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profiel | Darvan Suleiman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-    <div class="container">
-        <header>
-            <nav>
-                <div class="nav-links">
-                    <a href="profile.html">Profile</a> |
-                    <a href="projecten.html">Projecten</a> |
-                    <a href="skills.html">Skills</a> |
-                    <a href="contacten.html">Contacten</a>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.snapchat.com"><img src="img/snapchat.png" alt="Snapchat"></a>
-                    <a href="https://www.linkedin.com"><img src="img/linkedin.png" alt="LinkedIn"></a>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <div class="image-container">
-                <img src="img/galaxy.png" alt="Galaxy">
-            </div>
-            <div class="text-container">
-                <h1>Profile</h1>
-                <p>
-                    Mijn naam is Naam, ik ben 18 jaar oud en een gedreven eerstejaars student Software Development bij Mondriaan.<br><br>
-                    Het vakgebied van programmeren fascineert me enorm, en ik ben constant bezig met het leren van nieuwe technieken en het ontwikkelen van verschillende projecten. Het gevoel van vooruitgang en de creatie van iets uit het niets, dat is wat me drijft.<br><br>
-                    Daarnaast spreek ik drie talen: Nederlands, Engels en Arabisch, wat me in staat stelt om met een breed scala aan mensen te communiceren en nieuwe perspectieven te ontdekken.<br><br>
-                    Ik ben altijd nieuwsgierig naar het onbekende en sta open voor nieuwe ervaringen die mijn kennis en persoonlijke ontwikkeling kunnen verrijken.
-                </p>
-            </div>
-        </main>
-
-
+<body data-page="profile">
+  <div class="site-bg"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+    <div class="container py-2">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"><span class="brand-dot"></span><span>Darvan.dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profiel</a></li>
+          <li class="nav-item"><a class="nav-link" href="projecten.html">Projecten</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacten.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <main class="page-hero section-space">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Profiel</span>
+        <h1>Over mij als developer</h1>
+        <p>Ik ben een gemotiveerde student software development met veel interesse in webdesign, front-end en het bouwen van gebruiksvriendelijke websites.</p>
+      </div>
+
+      <div class="row g-4 mt-4 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card p-3 profile-image-card text-center">
+            <img src="assets/img/galaxy.png" alt="Portfolio visual" class="img-fluid rounded-4 portfolio-image">
+          </div>
+        </div>
+        <div class="col-lg-7 reveal delay-1">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <h2>Darvan Suleiman</h2>
+            <p class="text-light-emphasis mt-3">
+              Ik studeer software development op mbo 4 niveau en ik werk graag aan websites die modern, snel en overzichtelijk zijn.
+              Wat mij aanspreekt in programmeren is dat je met code echt iets kunt opbouwen: van een idee naar een werkend product.
+            </p>
+            <p class="text-light-emphasis">
+              Mijn basis ligt sterk in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> en <strong>Bootstrap</strong>.
+              Daarnaast ben ik mezelf verder aan het ontwikkelen in <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Prisma</strong>, <strong>Symfony</strong>, <strong>Tailwind CSS</strong> en <strong>SQL</strong>.
+            </p>
+            <div class="info-grid mt-4">
+              <div class="info-box">
+                <span>Studie</span>
+                <strong>Software Development</strong>
+              </div>
+              <div class="info-box">
+                <span>Niveau</span>
+                <strong>MBO 4</strong>
+              </div>
+              <div class="info-box">
+                <span>Focus</span>
+                <strong>Web development</strong>
+              </div>
+              <div class="info-box">
+                <span>Werkstijl</span>
+                <strong>Creatief & leergierig</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 reveal">
+          <div class="glass-card p-4 h-100">
+            <h3>Wat mij typeert</h3>
+            <ul class="clean-list mt-3">
+              <li>Ik leer snel en werk graag aan nieuwe technieken</li>
+              <li>Ik wil steeds betere interfaces en designs maken</li>
+              <li>Ik hou van duidelijke structuur in code</li>
+              <li>Ik werk graag aan echte projecten met een doel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 reveal delay-1">
+          <div class="glass-card p-4 h-100">
+            <h3>Mijn richting</h3>
+            <p class="text-light-emphasis mt-3 mb-0">
+              Mijn doel is om door te groeien naar een developer die niet alleen mooie interfaces maakt,
+              maar ook begrijpt hoe een complete applicatie werkt van database tot gebruikerservaring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3 align-items-center">
+      <p class="mb-0">© 2026 Darvan Suleiman - Portfolio</p>
+      <div class="footer-links d-flex gap-3">
+        <a href="index.html">Home</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="contacten.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
