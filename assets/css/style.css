@@ -432,6 +432,42 @@ h1, h2, h3, h4 { line-height: 1.15; }
   font-weight: 500;
 }
 
+.skill-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .skill-item:hover {
+    background: rgba(109, 168, 255, 0.1);
+    border-color: var(--accent);
+  }
+
+  .skill-item h3 {
+    margin: 0 0 0.25rem 0;
+    color: var(--accent);
+  }
+
+  .skill-item span {
+    font-size: 0.85rem;
+    color: #b7c7dd;
+  }
+
+  .skill-item small {
+    font-size: 0.8rem;
+    color: #9aacc7;
+  }
+
+  #skillDescription {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
 /* Reveal animations */
 .reveal {
   opacity: 0;

@@ -70,6 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
+
+      // JavaScript voor klikbare skills
+  const skillItems = document.querySelectorAll('.skill-item');
+  const skillDescription = document.getElementById('skillDescription');
+
+  skillItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const desc = item.getAttribute('data-description');
+      skillDescription.textContent = desc;
+    });
+  });
     });
   });
 });
