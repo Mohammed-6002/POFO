@@ -3,48 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Darvan Suleiman | Portfolio</title>
-  <meta name="description" content="Portfolio van Darvan Suleiman – Software Development Student" />
+  <title>Darvan Hmydou | Portfolio</title>
+Portfolio van Mohammed Hmydou
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/complete-style.css" />
 </head>
-<body data-page="home">
+<body>
   <div class="site-bg"></div>
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
     <div class="container py-2">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
         <span class="brand-dot"></span>
-        <span>Darvan.dev</span>
+<span>Mohammed.dev</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="profile.html">Profiel</a></li>
-          <li class="nav-item"><a class="nav-link" href="projecten.html">Projecten</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacten.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profiel">Profiel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projecten">Projecten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="hero-section d-flex align-items-center justify-content-center text-center">
+  <header class="hero-section d-flex align-items-center justify-content-center text-center" id="home">
     <div class="container position-relative">
       <div class="hero-content">
-        <h1 class="hero-name">Darvan Suleiman</h1>
+<h1 class="hero-name">Mohammed Hmydou</h1>
         <p class="hero-tagline">Software Development Student</p>
         <p class="hero-subtitle">Op zoek naar een stageplek</p>
 
         <div class="hero-actions mt-5">
           <a href="#" class="btn btn-gradient btn-lg px-5 py-3 me-3">Download CV</a>
-          <a href="profile.html" class="btn btn-outline-light btn-lg px-5 py-3">Over mij</a>
+          <a href="#profiel" class="btn btn-outline-light btn-lg px-5 py-3">Over mij</a>
         </div>
 
         <div class="internship-badge mt-4">
@@ -58,10 +59,289 @@
     </div>
   </header>
 
-  <!-- De rest van je pagina (sections, footer) kun je houden of later toevoegen -->
-  <!-- Voor nu hou ik het minimaal zoals de referentie -->
+  <main id="profiel" class="page-hero section-space">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Profiel</span>
+        <h1>Over mij als developer</h1>
+        <p>Ik ben een gemotiveerde student software development met veel interesse in webdesign, front-end en het bouwen van gebruiksvriendelijke websites.</p>
+      </div>
+
+      <div class="row g-4 mt-4 align-items-center">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card p-3 profile-image-card text-center">
+            <img src="assets/img/galaxy.png" alt="Portfolio visual" class="img-fluid rounded-4 portfolio-image">
+          </div>
+        </div>
+        <div class="col-lg-7 reveal delay-1">
+          <div class="glass-card p-4 p-lg-5 h-100">
+<h2>Mohammed Hmydou</h2>
+            <p class="text-light-emphasis mt-3">
+              Ik studeer software development op mbo 4 niveau en ik werk graag aan websites die modern, snel en overzichtelijk zijn.
+              Wat mij aanspreekt in programmeren is dat je met code echt iets kunt opbouwen: van een idee naar een werkend product.
+            </p>
+            <p class="text-light-emphasis">
+              Mijn basis ligt sterk in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> en <strong>Bootstrap</strong>.
+              Daarnaast ben ik mezelf verder aan het ontwikkelen in <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Prisma</strong>, <strong>Symfony</strong>, <strong>Tailwind CSS</strong> en <strong>SQL</strong>.
+            </p>
+            <div class="info-grid mt-4">
+              <div class="info-box">
+                <span>Studie</span>
+                <strong>Software Development</strong>
+              </div>
+              <div class="info-box">
+                <span>Niveau</span>
+                <strong>MBO 4</strong>
+              </div>
+              <div class="info-box">
+                <span>Focus</span>
+                <strong>Web development</strong>
+              </div>
+              <div class="info-box">
+                <span>Werkstijl</span>
+                <strong>Creatief & leergierig</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 reveal">
+          <div class="glass-card p-4 h-100">
+            <h3>Wat mij typeert</h3>
+            <ul class="clean-list mt-3">
+              <li>Ik leer snel en werk graag aan nieuwe technieken</li>
+              <li>Ik wil steeds betere interfaces en designs maken</li>
+              <li>Ik hou van duidelijke structuur in code</li>
+              <li>Ik werk graag aan echte projecten met een doel</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 reveal delay-1">
+          <div class="glass-card p-4 h-100">
+            <h3>Mijn richting</h3>
+            <p class="text-light-emphasis mt-3 mb-0">
+              Mijn doel is om door te groeien naar een developer die niet alleen mooie interfaces maakt,
+              maar ook begrijpt hoe een complete applicatie werkt van database tot gebruikerservaring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main id="projecten" class="section-space page-hero">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Projecten</span>
+        <h1>Mijn werk en concepten</h1>
+        <p>Ik laat hier zowel gebouwde projecten als sterke concepten zien die passen bij mijn groei als developer.</p>
+      </div>
+
+      <div class="filter-row reveal mt-4">
+        <button class="filter-btn active" data-filter="all">Alles</button>
+        <button class="filter-btn" data-filter="frontend">Front-end</button>
+        <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+        <button class="filter-btn" data-filter="concept">Concept</button>
+      </div>
+
+      <div class="row g-4 mt-2 project-grid">
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100">
+            <img src="assets/img/hoger-lager.pnj.png" class="project-image" alt="Hoger Lager">
+            <div class="p-4">
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Hoger Lager Game</h3>
+              <p>Een interactief spel waarbij de speler sneller leert werken met logica, UI en scoreverwerking.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100">
+            <img src="assets/img/BKE.png" class="project-image" alt="Boter Kaas en Eieren">
+            <div class="p-4">
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Boter Kaas en Eieren</h3>
+              <p>Een klassiek spel dat ik heb gebruikt om game logica, klikacties en weergave van status te oefenen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="frontend">
+          <div class="glass-card project-card h-100">
+            <img src="assets/img/review-your-experience.png" class="project-image" alt="Review Experience">
+            <div class="p-4">
+              <div class="project-tags"><span>UI</span><span>Layout</span><span>Design</span></div>
+              <h3>Review Your Experience</h3>
+              <p>Een reflectieproject met focus op presentatie, informatieverdeling en visuele structuur.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="fullstack">
+          <div class="glass-card project-card h-100">
+            <div class="project-placeholder"><span>01</span></div>
+            <div class="p-4">
+              <div class="project-tags"><span>PHP</span><span>SQL</span><span>Bootstrap</span></div>
+              <h3>Budget Buddy</h3>
+              <p>Een financieel dashboard concept waarin gebruikers inkomsten, uitgaven en overzichten kunnen beheren.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="fullstack">
+          <div class="glass-card project-card h-100">
+            <div class="project-placeholder"><span>02</span></div>
+            <div class="p-4">
+              <div class="project-tags"><span>Next.js</span><span>Prisma</span><span>Chart.js</span></div>
+              <h3>SDG Dashboard</h3>
+              <p>Een dashboard met statistieken, filters en kaarten om data duidelijk en visueel te presenteren.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 project-item" data-category="concept">
+          <div class="glass-card project-card h-100">
+            <div class="project-placeholder"><span>03</span></div>
+            <div class="p-4">
+              <div class="project-tags"><span>Symfony</span><span>SQL</span><span>UX</span></div>
+              <h3>Rijschool Theorie Platform</h3>
+              <p>Een concept voor studenten die theorievragen oefenen, feedback krijgen en hun resultaten kunnen volgen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main id="skills" class="section-space page-hero">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Skills</span>
+        <h1>Technische en persoonlijke skills</h1>
+        <p>Mijn basis is sterk in front-end, terwijl ik tegelijk verder groei richting modern full-stack development.</p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-7 reveal">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>HTML</span><strong>90%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:90%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>CSS</span><strong>85%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:85%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>JavaScript</span><strong>78%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:78%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>Bootstrap</span><strong>82%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:82%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>Tailwind CSS</span><strong>70%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:70%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>SQL</span><strong>72%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:72%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>Next.js</span><strong>60%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:60%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>TypeScript</span><strong>58%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:58%"></div></div></div>
+            <div class="skill-row"><div class="d-flex justify-content-between"><span>Prisma</span><strong>55%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:55%"></div></div></div>
+            <div class="skill-row mb-0"><div class="d-flex justify-content-between"><span>Symfony</span><strong>52%</strong></div><div class="skill-track"><div class="skill-fill" style="--fill:52%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 reveal delay-1">
+          <div class="glass-card p-4 h-100">
+            <h3 class="mb-3">Niveau uitleg</h3>
+            <div class="level-box mb-3">
+              <span>Gemiddeld tot sterk</span>
+              <p class="mb-0">HTML, CSS, JavaScript, Bootstrap en SQL vormen mijn sterkste basis.</p>
+            </div>
+            <div class="level-box mb-3">
+              <span>Beginner tot gemiddeld</span>
+              <p class="mb-0">Next.js, TypeScript, Prisma en Symfony zijn technologieën waarin ik mezelf actief verbeter.</p>
+            </div>
+            <div class="level-box">
+              <span>Soft skills</span>
+              <p class="mb-0">Samenwerken, duidelijk communiceren, probleemoplossend denken en doorzetten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main id="contact" class="section-space page-hero">
+    <div class="container pt-5">
+      <div class="section-title text-center reveal">
+        <span class="eyebrow">Contact</span>
+        <h1>Laten we contact opnemen</h1>
+        <p>Voor vragen, samenwerking of stage-interesse kun je mij bereiken via onderstaande gegevens.</p>
+      </div>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <span class="small-tag">Beschikbaar voor contact</span>
+            <h2 class="mt-3">Contactgegevens</h2>
+            <div class="contact-list mt-4">
+              <div class="contact-item">
+                <span>E-mail</span>
+                <a href="mailto:30352550@student.rocmondriaan.nl">30352550@student.rocmondriaan.nl</a>
+              </div>
+              <div class="contact-item">
+                <span>Telefoon</span>
+                <a href="tel:+31612345678">+31 6 1234 5678</a>
+              </div>
+              <div class="contact-item">
+                <span>Status</span>
+                <p class="mb-0">Student software development</p>
+              </div>
+              <div class="contact-item">
+                <span>Interesse</span>
+                <p class="mb-0">Websites, front-end en full-stack groei</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal delay-1">
+          <div class="glass-card p-4 p-lg-5 h-100">
+            <h2>Stuur een bericht</h2>
+            <p class="text-light-emphasis">Deze contactsectie is nu veel beter afgestemd op een moderne developer portfolio.</p>
+            <form class="contact-form mt-4">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Naam</label>
+                  <input type="text" class="form-control" placeholder="Jouw naam">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">E-mail</label>
+                  <input type="email" class="form-control" placeholder="naam@email.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Onderwerp</label>
+                  <input type="text" class="form-control" placeholder="Waar gaat je bericht over?">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Bericht</label>
+                  <textarea class="form-control" rows="6" placeholder="Schrijf hier je bericht..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-gradient px-4" id="contactButton">Verstuur bericht</button>
+                </div>
+              </div>
+            </form>
+            <div class="form-feedback mt-3" id="formFeedback"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-3 align-items-center">
+© 2026 Mohammed Hmydou - Portfolio
+      <div class="footer-links d-flex gap-3">
+        <a href="#home">Home</a>
+        <a href="#projecten">Projecten</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
+
