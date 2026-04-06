@@ -367,9 +367,7 @@ h1, h2, h3, h4 { line-height: 1.15; }
   --bg-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #43e97b 100%);
 }
 
-.project-image[style*="review"] {
-  --bg-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 50%, #f7797d 100%);
-}
+.project-image[style*="review"] { --bg-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 50%, #f7797d 100%); project-image[style*=\"budget\"] {  --bg-gradient: linear-gradient(135deg, #f7971e 0%, #ffd200 50%, #f7971e 100%); project-image[style*=\"sdg\"] { --bg-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 50%, #0ed3a3 100%); project-image[style*=\"chess\"] { --bg-gradient: linear-gradient(135deg, #2c1810 0%, #4a2c0b 50%, #8b4513 100%);}
 
 .project-image img {
   width: 100%;
@@ -802,4 +800,3 @@ h1, h2, h3, h4 { line-height: 1.15; }
     gap: 1rem;
   }
 }
-
