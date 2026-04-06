@@ -28,6 +28,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Skill Modal functionality
+  const skillCards = document.querySelectorAll('.skill-card');
+  const skillModal = document.getElementById('skillModal');
+  const skillModalOverlay = document.getElementById('skillModalOverlay');
+  const skillModalClose = document.getElementById('skillModalClose');
+  const skillModalIcon = document.getElementById('skillModalIcon');
+  const skillModalName = document.getElementById('skillModalName');
+  const skillModalLevel = document.getElementById('skillModalLevel');
+  const skillModalDescription = document.getElementById('skillModalDescription');
+
+  // Helper function to get icon HTML
+  function getIconHTML(element) {
+    return element.querySelector('i').outerHTML;
+  }
+
+  // Open modal
+  skillCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const skillName = card.getAttribute('data-skill-name');
+      const skillLevel = card.getAttribute('data-skill-level');
+      const description = card.getAttribute('data-description');
+      const iconHTML = getIconHTML(card);
+
+      skillModalIcon.innerHTML = iconHTML;
+      skillModalName.textContent = skillName;
+      skillModalLevel.textContent = skillLevel;
+      skillModalDescription.textContent = description;
+
+      skillModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close modal
+  function closeModal() {
+    skillModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  skillModalClose.addEventListener('click', closeModal);
+  skillModalOverlay.addEventListener('click', closeModal);
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && skillModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
   // Contact form demo
   const contactButton = document.getElementById('contactButton');
   const formFeedback = document.getElementById('formFeedback');
@@ -70,18 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
-
-      // JavaScript voor klikbare skills
-  const skillItems = document.querySelectorAll('.skill-item');
-  const skillDescription = document.getElementById('skillDescription');
-
-  skillItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const desc = item.getAttribute('data-description');
-      skillDescription.textContent = desc;
-    });
-  });
     });
   });
 });
+
 

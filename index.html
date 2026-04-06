@@ -9,6 +9,7 @@ Portfolio van Mohammed Hmydou
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zTksf2GZpDO3VUOSMSmLzJUIEbF7vtVVzqS5EP7QWGxLwyhmychQwxwYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="stylesheet" href="assets/css/complete-style.css" />
 </head>
@@ -225,84 +226,154 @@ Portfolio van Mohammed Hmydou
     </div>
 
     <div class="row g-4 mt-3">
-      <div class="col-lg-6 reveal">
-        <div class="glass-card p-4 p-lg-5 h-100">
-          <!-- Skill HTML -->
-          <div class="skill-item" data-description="One of the first languages I learned in school. HTML gave me a solid foundation in understanding web structure and logic, and led to building multiple projects from scratch.">
-            <h3>HTML</h3>
-            <span>HTML5</span>
-            <small>Intermediate / Advanced</small>
+      <div class="col-12 reveal">
+        <div class="skills-container">
+          <!-- Frontend Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class="fas fa-palette"></i> Frontend
+            </h4>
+            
+            <div class="row g-3">
+              <!-- Skill HTML -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="HTML5" data-skill-level="Intermediate / Advanced" data-description="One of the first languages I learned in school. HTML5 gave me a solid foundation in understanding web structure and logic, and led to building multiple projects from scratch.">
+                  <i class="fab fa-html5"></i>
+                  <h5>HTML5</h5>
+                </div>
+              </div>
+
+              <!-- Skill CSS -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="CSS3" data-skill-level="Intermediate / Advanced" data-description="Learned alongside HTML, CSS is the foundation for all my web design work. I use CSS to create responsive layouts, animations, and visually appealing interfaces.">
+                  <i class="fab fa-css3-alt"></i>
+                  <h5>CSS3</h5>
+                </div>
+              </div>
+
+              <!-- Skill JavaScript -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="JavaScript" data-skill-level="Beginner / Intermediate" data-description="My first scripting language, used across multiple school projects. JavaScript brought my web pages to life with interactivity and dynamic functionality.">
+                  <i class="fab fa-js-square"></i>
+                  <h5>JavaScript</h5>
+                </div>
+              </div>
+
+              <!-- Skill TypeScript -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="TypeScript" data-skill-level="Beginner" data-description="Started learning this school year through the Next.js framework. TypeScript adds type safety to JavaScript, which helps catch errors early and makes code more maintainable.">
+                  <i class="fab fa-js"></i>
+                  <h5>TypeScript</h5>
+                </div>
+              </div>
+
+              <!-- Skill React / Next.js -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="React / Next.js" data-skill-level="Beginner" data-description="Learned through the Next.js framework at school. Next.js provides much more structure, keeping projects organized and clean. Currently still learning and growing in this technology.">
+                  <i class="fab fa-react"></i>
+                  <h5>React / Next.js</h5>
+                </div>
+              </div>
+
+              <!-- Skill Tailwind CSS -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Tailwind CSS" data-skill-level="Beginner" data-description="Used in my Next.js projects for utility-first styling. Tailwind makes it fast to build responsive, consistent UIs without writing custom CSS for everything.">
+                  <i class="fas fa-wind"></i>
+                  <h5>Tailwind CSS</h5>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Skill CSS -->
-          <div class="skill-item" data-description="CSS made my websites visually appealing. I mastered layout, colors, and responsive design while building multiple projects.">
-            <h3>CSS</h3>
-            <span>CSS3</span>
-            <small>Intermediate / Advanced</small>
+          <!-- Backend & Database Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class="fas fa-server"></i> Backend & Database
+            </h4>
+            
+            <div class="row g-3">
+              <!-- Skill PHP -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="PHP" data-skill-level="Intermediate (rusty)" data-description="The first backend language I learned at school. I used PHP to connect MySQL databases and create master and detail pages using GET requests. A bit rusty since I haven't used it since last year.">
+                  <i class="fab fa-php"></i>
+                  <h5>PHP</h5>
+                </div>
+              </div>
+
+              <!-- Skill MySQL -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="MySQL" data-skill-level="Intermediate" data-description="Database management used in multiple projects. Connected through PHP in earlier projects and through Prisma ORM in my more recent Next.js work.">
+                  <i class="fas fa-database"></i>
+                  <h5>MySQL</h5>
+                </div>
+              </div>
+
+              <!-- Skill Prisma ORM -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Prisma ORM" data-skill-level="Beginner" data-description="Used in the SDG Dashboard project with Next.js. Prisma provides a clean, type-safe way to interact with databases, making queries much easier to write and maintain.">
+                  <i class="fas fa-gears"></i>
+                  <h5>Prisma ORM</h5>
+                </div>
+              </div>
+
+              <!-- Skill Java -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Java" data-skill-level="Beginner / Intermediate" data-description="One of my favorite languages to code in. I wrote my personal Minecraft mod (BetterLeaderboards-MC) in Java. It's my go-to language when it comes to structure and reliability.">
+                  <i class="fab fa-java"></i>
+                  <h5>Java</h5>
+                </div>
+              </div>
+
+              <!-- Skill Symfony -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Symfony" data-skill-level="Beginner" data-description="A PHP framework I recently started learning. Symfony provides a structured way to build web applications with reusable components and best practices built in.">
+                  <i class="fas fa-code"></i>
+                  <h5>Symfony</h5>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Skill JavaScript -->
-          <div class="skill-item" data-description="JavaScript allows me to make websites interactive. I built forms, games, and dynamic content using JS.">
-            <h3>JavaScript</h3>
-            <span>ES6+</span>
-            <small>Intermediate</small>
-          </div>
+          <!-- Tools & Methods Section -->
+          <div class="skills-section">
+            <h4 class="skills-section-title">
+              <i class="fas fa-tools"></i> Tools & Methods
+            </h4>
+            
+            <div class="row g-3">
+              <!-- Skill Git / GitHub -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Git / GitHub" data-skill-level="Intermediate" data-description="Version control used across all my projects. I use Git for tracking changes, branching, and collaborating with classmates. GitHub is where I host and share my code.">
+                  <i class="fab fa-github"></i>
+                  <h5>Git / GitHub</h5>
+                </div>
+              </div>
 
-          <!-- Skill Bootstrap -->
-          <div class="skill-item" data-description="Bootstrap helped me quickly build responsive and mobile-first interfaces, saving development time and ensuring consistency.">
-            <h3>Bootstrap</h3>
-            <span>v5+</span>
-            <small>Intermediate</small>
-          </div>
+              <!-- Skill Agile / Scrum -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Agile / Scrum" data-skill-level="Intermediate" data-description="Project methodology used at school. We work in sprints, do stand-ups, and use scrum boards to organize our tasks and track progress as a team.">
+                  <i class="fas fa-users"></i>
+                  <h5>Agile / Scrum</h5>
+                </div>
+              </div>
 
-          <!-- Skill Tailwind CSS -->
-          <div class="skill-item" data-description="Tailwind helps me build modern UI fast without writing tons of custom CSS.">
-            <h3>Tailwind CSS</h3>
-            <span>v3+</span>
-            <small>Beginner / Intermediate</small>
-          </div>
+              <!-- Skill Linux -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="Linux" data-skill-level="Intermediate" data-description="Experience with Linux operating systems, terminal commands, and server management. Comfortable working in a command-line environment.">
+                  <i class="fab fa-linux"></i>
+                  <h5>Linux</h5>
+                </div>
+              </div>
 
-          <!-- Skill SQL -->
-          <div class="skill-item" data-description="SQL taught me how to store and retrieve data efficiently, essential for full-stack applications.">
-            <h3>SQL</h3>
-            <span>MySQL / PostgreSQL</span>
-            <small>Intermediate</small>
+              <!-- Skill AI / Prompt Engineering -->
+              <div class="col-lg-4 col-md-6">
+                <div class="skill-card" data-skill-name="AI / Prompt Engineering" data-skill-level="Intermediate" data-description="Skilled at leveraging AI tools effectively for coding assistance, problem-solving, and boosting productivity. Understanding how to write clear prompts to get the best results.">
+                  <i class="fas fa-brain"></i>
+                  <h5>AI / Prompt Engineering</h5>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <!-- Skill Next.js -->
-          <div class="skill-item" data-description="Next.js introduced me to React component-based architecture, server-side rendering, and routing.">
-            <h3>Next.js</h3>
-            <span>v13+</span>
-            <small>Beginner / Intermediate</small>
-          </div>
-
-          <!-- Skill TypeScript -->
-          <div class="skill-item" data-description="TypeScript helps me write safer, maintainable code for larger projects.">
-            <h3>TypeScript</h3>
-            <span>ES6+</span>
-            <small>Beginner / Intermediate</small>
-          </div>
-
-          <!-- Skill Prisma -->
-          <div class="skill-item" data-description="Prisma simplifies database management with TypeScript and improves query efficiency.">
-            <h3>Prisma</h3>
-            <span>v4+</span>
-            <small>Beginner / Intermediate</small>
-          </div>
-
-          <!-- Skill Symfony -->
-          <div class="skill-item" data-description="Symfony introduced structured backend development in PHP and improved project architecture skills.">
-            <h3>Symfony</h3>
-            <span>v6+</span>
-            <small>Beginner / Intermediate</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 reveal delay-1">
-        <div class="glass-card p-4 h-100">
-          <h3>Skill uitleg</h3>
-          <p id="skillDescription">Klik op een skill links om een korte beschrijving te zien.</p>
         </div>
       </div>
     </div>
@@ -387,6 +458,22 @@ Portfolio van Mohammed Hmydou
       </div>
     </div>
   </footer>
+
+  <!-- Skill Modal -->
+  <div class="skill-modal" id="skillModal">
+    <div class="skill-modal-overlay" id="skillModalOverlay"></div>
+    <div class="skill-modal-content">
+      <button class="skill-modal-close" id="skillModalClose">×</button>
+      <div class="skill-modal-header">
+        <div class="skill-modal-icon" id="skillModalIcon"></div>
+        <div class="skill-modal-title-section">
+          <h2 id="skillModalName"></h2>
+          <span class="skill-modal-level" id="skillModalLevel"></span>
+        </div>
+      </div>
+      <p class="skill-modal-description" id="skillModalDescription"></p>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
