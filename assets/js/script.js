@@ -38,16 +38,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const skillModalLevel = document.getElementById('skillModalLevel');
   const skillModalDescription = document.getElementById('skillModalDescription');
 
+  // Project Modal functionality
+  const projectCards = document.querySelectorAll('.project-card');
+  const projectModal = document.getElementById('projectModal');
+  const projectModalOverlay = document.getElementById('projectModalOverlay');
+  const projectModalClose = document.getElementById('projectModalClose');
+  const projectModalIcon = document.getElementById('projectModalIcon');
+  const projectModalTitle = document.getElementById('projectModalTitle');
+  const projectModalLevel = document.getElementById('projectModalLevel');
+  const projectModalIntro = document.getElementById('projectModalIntro');
+  const projectModalFeatures = document.getElementById('projectModalFeatures');
+  const projectModalLearned = document.getElementById('projectModalLearned');
+  const projectModalTech = document.getElementById('projectModalTech');
+  const projectModalTeam = document.getElementById('projectModalTeam');
+
   // Helper function to get icon HTML
   function getIconHTML(element) {
     return element.querySelector('i').outerHTML;
   }
 
-  // Open modal
+  // Open skill modal
   skillCards.forEach(card => {
     card.addEventListener('click', () => {
       const skillName = card.getAttribute('data-skill-name');
-      const skillLevel = card.getAttribute('data-skill-level');
+      const skillLevel = card.getAttribute('data-skill-level') || card.getAttribute('data-skill-level');
       const description = card.getAttribute('data-description');
       const iconHTML = getIconHTML(card);
 
@@ -61,23 +75,60 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close modal
-  function closeModal() {
+  // Open project modal
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.getAttribute('data-project-title');
+      const level = card.getAttribute('data-level');
+      const intro = card.getAttribute('data-intro');
+      const learned = card.getAttribute('data-learned');
+      const featuresHTML = card.getAttribute('data-features');
+      const techHTML = card.getAttribute('data-tech');
+      const team = card.getAttribute('data-team');
+      const iconHTML = getIconHTML(card);
+
+      projectModalIcon.innerHTML = iconHTML;
+      projectModalTitle.textContent = title;
+      projectModalLevel.textContent = level;
+      projectModalIntro.textContent = intro;
+      projectModalLearned.textContent = learned;
+      projectModalTeam.textContent = team;
+      projectModalFeatures.innerHTML = featuresHTML;
+      projectModalTech.innerHTML = techHTML;
+
+      projectModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close functions
+  function closeSkillModal() {
     skillModal.classList.remove('active');
     document.body.style.overflow = 'auto';
   }
 
-  skillModalClose.addEventListener('click', closeModal);
-  skillModalOverlay.addEventListener('click', closeModal);
+  function closeProjectModal() {
+    projectModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
 
-  // Close modal with Escape key
+  // Skill modal close listeners
+  skillModalClose.addEventListener('click', closeSkillModal);
+  skillModalOverlay.addEventListener('click', closeSkillModal);
+
+  // Project modal close listeners
+  projectModalClose.addEventListener('click', closeProjectModal);
+  projectModalOverlay.addEventListener('click', closeProjectModal);
+
+  // Escape key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && skillModal.classList.contains('active')) {
-      closeModal();
+    if (e.key === 'Escape') {
+      closeSkillModal();
+      closeProjectModal();
     }
   });
 
-  // Contact form demo
+  // Contact form demo (if exists)
   const contactButton = document.getElementById('contactButton');
   const formFeedback = document.getElementById('formFeedback');
   if (contactButton && formFeedback) {
@@ -86,10 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Navbar active on scroll (SPA)
+  // Navbar active on scroll
   const sections = document.querySelectorAll('header[id], main[id]');
   const navLinks = document.querySelectorAll('.nav-link');
-  let currentActive = 0;
 
   const navObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -105,12 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {
     threshold: 0.3,
-    rootMargin: '-20% 0px -40% 0px' // Offset for fixed navbar
+    rootMargin: '-20% 0px -40% 0px'
   });
 
   sections.forEach(section => navObserver.observe(section));
 
-  // Smooth scroll for nav links
+  // Smooth scroll
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -122,5 +172,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
