@@ -82,7 +82,7 @@ h1, h2, h3, h4 { line-height: 1.15; }
 }
 
 .hero-name {
-  font-size: clamp(5.5rem, 14vw, 13rem);
+  font-size: clamp(5.5rem, 10vw, 13rem);
   font-weight: 900;
   line-height: 0.92;
   letter-spacing: -0.05em;
@@ -307,7 +307,8 @@ h1, h2, h3, h4 { line-height: 1.15; }
   height: 200px;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  position: relative;
+  background: var(--bg-gradient, linear-gradient(135deg, var(--accent), var(--accent-2)));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -315,6 +316,61 @@ h1, h2, h3, h4 { line-height: 1.15; }
   font-size: 2rem;
   font-weight: 700;
 }
+
+.project-image-icon {
+  font-size: 4rem;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-image-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(8px);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.project-image::after {
+  content: attr(data-alt);
+  position: absolute;
+  z-index: 3;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 1rem;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image::after {
+  opacity: 1;
+}
+
+/* Pattern-specific gradients */
+.project-image[style*="game"] {
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.project-image[style*="tic-tac-toe"] {
+  --bg-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 50%, #43e97b 100%);
+}
+
+.project-image[style*="review"] {
+  --bg-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 50%, #f7797d 100%);
+}
+
 .project-image img {
   width: 100%;
   height: 100%;
